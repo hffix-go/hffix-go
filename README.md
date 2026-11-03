@@ -13,6 +13,23 @@ The module path is the repository path, so the package can be imported directly:
 go get github.com/hffix-go/hffix-go
 ```
 
+The default `main` branch may include experimental or in-progress features. For
+a stable experience, please use specific tags rather than `@main`. For example,
+to pin v1.2.3:
+
+```sh
+go get github.com/hffix-go/hffix-go@v1.2.3
+```
+
+which records the release in your `go.mod`:
+
+```
+require github.com/hffix-go/hffix-go v1.2.3
+```
+
+Tags are `v`-prefixed versions of [VERSION](./VERSION); use the
+[tags](https://github.com/hffix-go/hffix-go/tags) page to choose one.
+
 ## Quickstart
 
 In your own module, create `main.go` and run it with `go run .`:
@@ -135,7 +152,7 @@ when a peer requires that behavior. The full tag set derives from upstream
 ## Releasing
 
 Releases are tagged from the contents of [VERSION](./VERSION) with a `v` prefix,
-so a `VERSION` of `0.1.1` releases tag `v0.1.1`:
+so a `VERSION` of `1.2.3` releases tag `v1.2.3`:
 
 ```sh
 python3 scripts/release.py

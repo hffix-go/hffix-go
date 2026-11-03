@@ -2,7 +2,7 @@
 """Tag and publish a release from the VERSION file.
 
 The release tag is built by prefixing the contents of VERSION with "v", so a
-VERSION of "0.1.1" produces the tag "v0.1.1".
+VERSION of "1.2.3" produces the tag "v1.2.3".
 
 The script refuses to tag unless the local checkout is on main, has no
 unstaged, staged, or untracked changes, and matches the remote branch.
