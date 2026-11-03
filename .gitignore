@@ -1,0 +1,28 @@
+# Go build and test artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+
+# Coverage and profiling output
+*.cover
+*.prof
+coverage.out
+coverage.html
+
+# Go workspace files for local multi-module development
+go.work
+go.work.sum
+
+# Python bytecode from scripts/
+__pycache__/
+*.py[cod]
+
+# Editor and OS metadata
+.DS_Store
+.idea/
+.vscode/
